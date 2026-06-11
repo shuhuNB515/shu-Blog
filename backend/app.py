@@ -14,6 +14,7 @@ CORS(app, supports_credentials=True, origins=[
     'http://localhost:3000'
 ])
 
+
 IMAGE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'images')
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'blog.db')
 
