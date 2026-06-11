@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="nav-container">
         <router-link to="/" class="nav-brand">
-          <img :src="'/api/images/doro1.png'" class="nav-logo" alt="logo" />
+          <img :src="apiUrl('/api/images/doro1.png')" class="nav-logo" alt="logo" />
           Shu Blog
         </router-link>
         <div class="nav-links">
@@ -32,6 +32,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { auth } from './stores/auth.js'
+import { apiUrl } from './api.js'
 import CarEffect from './components/CarEffect.vue'
 
 onMounted(() => {

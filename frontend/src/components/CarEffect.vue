@@ -14,8 +14,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { apiUrl } from '../api.js'
 
-const carUrl = '/api/images/car2.png'
+const carUrl = apiUrl('/api/images/car2.png')
 const car = ref(null)
 const smokeCanvas = ref(null)
 const carStyle = ref({})
