@@ -11,6 +11,8 @@ app.config['SESSION_COOKIE_SAMESITE'] = 'None'
 app.config['SESSION_COOKIE_SECURE'] = True
 CORS(app, supports_credentials=True, origins=[
     'https://shuhunb515.github.io',
+    'https://shuhu.me',
+    'http://shuhu.me',
     'http://localhost:3000'
 ])
 

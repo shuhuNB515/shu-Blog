@@ -26,5 +26,6 @@
 </template>
 
 <script setup>
-const bgUrl = '/api/images/bg3.png'
+import { apiUrl } from '../api.js'
+const bgUrl = apiUrl('/api/images/bg3.png')
 </script>
