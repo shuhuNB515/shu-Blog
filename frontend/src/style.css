@@ -11,7 +11,12 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #0d1117 url('/api/images/bg3.png') center center / cover no-repeat fixed;
+  background: #0d1117;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #c9d1d9;
   min-height: 100vh;
 }
