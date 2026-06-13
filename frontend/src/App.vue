@@ -10,7 +10,7 @@
           <router-link to="/">首页</router-link>
           <router-link to="/learning">学习过程</router-link>
           <router-link to="/projects">我的项目</router-link>
-          <a href="http://shuhu.me/shu-CTF-blog/#/" target="_blank">我的CTF博客</a>
+          <a href="https://shuhunb515.github.io/shu-CTF-blog/#/" target="_blank">我的CTF博客</a>
           <template v-if="auth.loggedIn">
             <router-link to="/edit-learning">修改学习过程</router-link>
             <router-link to="/edit-projects">修改我的项目</router-link>
