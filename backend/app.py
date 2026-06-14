@@ -75,6 +75,9 @@ def init_db():
         conn.execute("INSERT INTO projects (title, description, content, file_path, sort_order) VALUES (?, ?, ?, ?, ?)",
             ('安装 D-Bus 核心组件', '在 shu-linux 发行版上安装和配置 D-Bus 核心组件，解决 BLFS 构建过程中的依赖问题。',
              '## 项目简介\n\n在 shu-linux 上部署 D-Bus 消息总线系统，解决 BLFS 构建链中的各种编译与依赖问题。', 'dbus-components.md', 4))
+        conn.execute("INSERT INTO projects (title, description, content, file_path, sort_order) VALUES (?, ?, ?, ?, ?)",
+            ('Sentio-AI (七流云)', '基于视觉的 AI 语音助手。支持摄像头实时分析、多模态对话、语音输入/输出、创意工具栏等。前端 Vue 3 + 后端 Flask + OpenAI API。',
+             '## 项目简介\n\nSentio-AI 是一个 AI 视觉对话助手，支持摄像头实时画面分析、多轮 AI 对话、语音交互。', 'sentio-ai.md', 5))
 
     conn.commit()
     conn.close()
